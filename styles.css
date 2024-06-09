@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+     font-family: "Poppins", sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f8f9fa;
+}
+
+nav {
+     background-color: #333;
+     padding: 5px 0;
+}
+
+nav h1 {
+     text-align: center;
+     color: #fff;
+}
+
+.wrapper {
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.container {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     max-width: 600px;
+     width: 100%;
+     text-align: center;
+}
+
+h1 {
+     margin-top: 0;
+}
+
+h2, h3 {
+     padding-top: 15px;
+     text-align: left;
+     font-size: 18px;
+}
+
+.form {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+}
+
+.input-group {
+     flex: 1;
+     min-width: 150px;
+     text-align: left;
+}
+
+label {
+     display: block;
+     margin-bottom: 5px;
+}
+
+input {
+     width: 100%;
+     padding: 10px;
+     border-radius: 4px;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+}
+
+.add-btn,
+.btn-filter {
+     padding: 10px;
+     height: 38px;
+     background-color: #333;
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     margin-top: 30px;
+
+}
+
+.btn-delete {
+     padding: 5px;
+     padding-bottom: 0;
+     background-color: red;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+
+button:hover {
+     background-color: #5f5b5b;
+}
+
+.btn-delete:hover {
+     background-color: #a12e2e;
+}
+
+ul {
+     list-style-type: none;
+     padding: 0;
+}
+
+ul li {
+     background-color: #f8f9fa;
+     padding: 15px;
+     margin-bottom: 10px;
+     border-radius: 4px;
+     border: 1px solid #ddd;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+#total-expenses {
+     font-weight: bold;
+}
+
+#category-summary {
+     display: flex;
+     gap: 2px;
+}
+#category-summary p{
+     text-align: left;
+     font-size: 15px;
+     background-color: #ddd;
+     padding: 10px;
+}
+
+footer {
+     margin-top: 20px;
+     text-align: center;
+     font-size: 14px;
+}
+
+
+/* Mobile view */
+@media (max-width: 600px) {
+     .form {
+          flex-direction: column;
+     }
+
+     .add-btn,
+     .btn-filter {
+          margin-top: 0;
+     }
+}

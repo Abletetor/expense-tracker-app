@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <title>Expense Tracker App</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <!-- header section  -->
+     <nav>
+          <h1>Expense Tracker</h1>
+     </nav>
+
+     <!-- main content  -->
+     <div class="wrapper">
+          <div class="container">
+               <form id="expense-form" class="form">
+                    <div class="input-group">
+                         <label for="expense-name">Expense Name:</label>
+                         <input type="text" id="expense-name" required>
+                    </div>
+                    <div class="input-group">
+                         <label for="expense-amount">Amount:</label>
+                         <input type="number" id="expense-amount" required>
+                    </div>
+                    <div class="input-group">
+                         <label for="expense-category">Category:</label>
+                         <input type="text" id="expense-category" required>
+                    </div>
+                    <div class="input-group">
+                         <label for="expense-date">Date:</label>
+                         <input type="date" id="expense-date" required>
+                    </div>
+                    <button type="submit" class="add-btn">Add Expense</button>
+               </form>
+
+               <!-- filter section form -->
+               <h2>Filter Expenses</h2>
+               <form id="filter-form" class="form">
+                    <div class="input-group">
+                         <label for="filter-start-date">Start Date:</label>
+                         <input type="date" id="filter-start-date">
+                    </div>
+                    <div class="input-group">
+                         <label for="filter-end-date">End Date:</label>
+                         <input type="date" id="filter-end-date">
+                    </div>
+                    <button type="submit" class="btn-filter">Filter</button>
+               </form>
+
+               <!-- display of expenses, total-expenses &  -->
+               <h2>Expenses</h2>
+               <ul id="expense-list"></ul>
+               <div id="total-expenses">Total Expenses: GH¢0.00</div>
+               <!-- <div id="category-summary"></div> -->
+
+          </div>
+     </div>
+     <footer>
+          &copy; <span id="footer-year"></span> Expense-Tracker App. All rights reserved
+     </footer>
+     <script src="script.js"></script>
+</body>
+
+</html>
